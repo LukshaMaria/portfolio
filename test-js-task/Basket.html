@@ -1,0 +1,109 @@
+<!Doctype Html>
+<html lang="ru">
+    <head>
+        <title>Sweet Dreams</title>
+        <meta charset="utf-8">
+        <link href="CSS/Buttons.css" rel="stylesheet">
+        <link href="CSS/Title.css" rel="stylesheet">
+        <link href="CSS/Basket.css" rel="stylesheet">
+        <link href="CSS/Header.css" rel="stylesheet">
+        <link href="CSS/Footer.css" rel="stylesheet">
+        <link href="CSS/Main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src="JS/exit.js"></script>
+        <script src="JS/Button.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+              <a class="logo" href="Main.html">
+                <img src="images/Logo7.png" alt=""/>
+              </a>
+              <div class="nav-toggle"><span></span></div>
+              <ul id="menu">
+                <li><a id="gallery" href="Gallery.html">Галерея</a></li>
+                <li><a id="order" href="Orders.html">Каталог</a></li>
+                <li><a id="sale" href="Sales.html">Акции</a></li>
+                <li><a id="master-class" href="Master-class.html">Мастер-классы</a></li>
+                <li><a id="comments" href="Comment.html">Отзывы</a></li>
+                <li><a class="show_popup" rel="tabs_info" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li><a onclick="exit()"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+              </ul>
+            </nav>
+        </header>
+        <div class="body-container">
+            <h1 class="title">Корзина</h1>
+            <div class="basket_element">
+                <div class="element"><img src="images/4.jpg" alt="Изображение"></div>
+                <div class="element element_title">
+                    <p><b>Название</b></p>
+                    <p>Свадебный торт</p>
+                </div>
+                <div class="element count">
+                    <p><b>Цена</b></p>
+                    <p>50 р/кг </p>
+                </div>
+                <div class="element counts">
+                    <p><b>Количество</b></p>
+                    <div class="block_sum">
+                        <p class="sum_" id="minus">-</p>
+                            <p><span id="span">10</span> кг</p>
+                        <p class="sum_" id="plus">+</p>
+                    </div>
+                </div>
+                <div class="element sum">
+                    <p><b>Итого</b></p>
+                    <p><span id="summa">500</span> р.</p>
+                </div>
+            </div>
+            <div class="basket_element">
+                <div class="element"><img src="images/6.jpg" alt="Изображение"></div>
+                <div class="element element_title">
+                    <p><b>Название</b></p>
+                    <p>Торт "Нежность"</p>
+                </div>
+                <div class="element count">
+                    <p><b>Цена</b></p>
+                    <p>10 р/кг</p>
+                </div>
+                <div class="element counts">
+                    <p><b>Количество</b></p>
+                    <div class="block_sum">
+                        <p class="sum_2" id="minus2">-</p>
+                            <p><span id="span2">3</span> кг</p>
+                        <p class="sum_2" id="plus2">+</p>
+                    </div>
+                </div>
+                <div class="element sum">
+                    <p><b>Итого</b></p>
+                    <p><span id="summa2">30</span> р.</p>
+                </div>
+            </div>
+            <div class="basket_element">
+                <div class="finish_sum">
+                    <p ><b>Итого:</b> <span id="finish_sum">530</span> р.</p>
+                    <button onclick="alert('Заказ принят!')" class="Buy">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-col logo-footer">
+                <a class="logo" href="Main.html">
+                    <img src="images/Logo7.png" alt="Логотип"/>
+                  </a>
+            </div>
+            <div class="footer-col contact-footer">
+                <a href="">Тел. +375(33)666442</a><br>
+                <a href="">email: SweetDreams@gmail.com</a><br>
+                <a href="">instagram: SweetDreamsby</a><br>
+                <a class="copyright" href="">@Sweet Dreams-2020</a>
+            </div>
+            <div class="footer-col tagline-footer">
+                <p>Сделайте свою жизнь немного слаще, купив нашу продукцию!</p>
+            </div>
+        </footer>
+    </body>
+</html>

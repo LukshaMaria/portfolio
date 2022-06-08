@@ -1,0 +1,145 @@
+*, *:after, *:before 
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out;
+}
+ul 
+{
+    list-style: none;
+}
+a 
+{
+    text-decoration: none;
+    outline: none;
+    padding: 5px;
+}
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+} 
+.container 
+{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+    padding: 20px;
+} 
+header 
+{
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.logo 
+{
+    display: block; 
+    float: left;
+}
+
+.logo  img
+{
+    width: 170px;
+    padding-top: 10px;
+}
+
+#menu
+{
+    text-align: center;
+    padding-top: 80px;
+}
+
+#menu li
+{
+    display: inline-block;
+}
+
+#menu a 
+{
+    color:  #5E325C;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    font-family: 'Roboto';
+    margin-right: 10px;
+    padding: 10px;
+}
+#menu a:hover
+{
+    color: #fff;
+    background: #d0a5a5;
+    border-radius: 2px;
+}
+#point-menu
+{
+    background: #d0a5a5;
+    border-radius: 2px;
+}
+    /* кнопка переключения меню, появляющаяся при ширине 768px */
+    .nav-toggle 
+    {
+        display: none;
+        position: relative;
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        background: #EF5A42;
+        cursor: pointer;
+    }
+    .nav-toggle span 
+    {
+        display: block;
+        position: absolute;
+        top: 19px;
+        left: 8px;
+        right: 8px;
+        height: 2px;
+        background: white;
+    }
+    .nav-toggle span:before, .nav-toggle span:after 
+    {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+    .nav-toggle span:before 
+    {
+        top: -10px;
+    }
+    .nav-toggle span:after 
+    {
+        bottom: -10px;
+    }
+    /* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+    #menu.active 
+    {
+        max-height: 123px;
+    }
+    @media(max-width:1016px)
+    {
+        header{background-size: 100%; margin: 0; padding: 0;}
+    }
+    @media(max-width:768px)
+    {
+        header{background-size: 100%;  margin: 0; padding: 0;}
+    }
+    @media(max-width:480px)
+    {
+        header{background-size: 100%;  margin: 0; padding: 0;}
+    }

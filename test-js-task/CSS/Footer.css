@@ -1,0 +1,38 @@
+footer
+{
+    background-color:rgba(94, 50, 92, 0.45);
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    position: relative;
+}
+.footer-col
+{
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-right: 3%;
+    padding: 2%;
+}
+.footer-col .logo img
+{
+    margin-left: 50%;
+}
+.footer-col a,.footer-col p
+{
+    color: white; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+.contact-footer
+{
+    margin-top: 5%;
+}
+.tagline-footer
+{
+    margin-top: 7%;
+}

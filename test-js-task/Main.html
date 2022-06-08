@@ -1,0 +1,120 @@
+<!Doctype Html>
+<html lang="ru">
+    <head>
+        <title>Sweet Dreams</title>
+        <meta charset="utf-8">
+        <link href="CSS/Buttons.css" rel="stylesheet">
+        <link href="CSS/Header.css" rel="stylesheet">
+        <link href="CSS/Search.css" rel="stylesheet">
+        <link href="CSS/Footer.css" rel="stylesheet">
+        <link href="CSS/Main.css" rel="stylesheet">
+        <link href="CSS/slider.css" rel="stylesheet">
+        <link href="CSS/MasterClassWindow.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src="JS/Slider.js"></script>
+        <script src="JS/Search.js"></script>
+        <script src="JS/Validate.js"></script>
+        <script src="JS/MasterClassWindow.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+              <a class="logo" href="Main.html">
+                <img src="images/Logo7.png" alt=""/>
+              </a>
+              <div class="nav-toggle"><span></span></div>
+              <ul id="menu">
+                <li><a id="gallery" href="Gallery.html">Галерея</a></li>
+                <li><a id="order" href="Orders.html">Каталог</a></li>
+                <li><a id="sale" href="Sales.html">Акции</a></li>
+                <li><a id="master-class" href="Master-class.html">Мастер-классы</a></li>
+                <li><a id="comments" href="Comment.html">Отзывы</a></li>
+                <li><a href="Basket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li><a class="show_popup" rel="reg_form" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+                <li><a class="show_popup" rel="into_form"><i class="fa fa-user-circle-o"  aria-hidden="true"></i></a></li>
+              </ul>
+            </nav>
+            <div class="search">
+                <form>
+                  <input type="text" placeholder="Поиск">
+                  <button type="submit"></button>
+                </form>
+            </div>
+        </header>
+        <div class="popup reg_form">
+            <p class="title_into">ВХОД</p>
+            <a class="close" href="#">Close</a>
+            <form method="post">
+                <label>Логин</label>
+                <input type="text" name="login" required/>
+                <label>Пароль</label>
+                <input type="password" name="password" required/><br>
+                <input type="submit" value="Войти">
+            </form>
+        </div>		
+        <div class="popup into_form">
+            <p class="title_into">Регистрация</p>
+            <a class="close" href="#">Close</a>
+            <form name="registration" onsubmit="return validate()">
+                <label>Логин</label>
+                <input type="text" name="login"/>
+                <label>Пароль</label>
+                <input type="password" name="password"/><br>
+                <label>email</label>
+                <input type="text" name="email"><br>
+                <label>Телефон</label>
+                <input type="text" name="phone"/><br>
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>	
+        <div class="main">
+        <div class="body-container">
+            <div class="row">
+                <div  class="block-1-1 images-1">
+                    <img src="images/3.jpg" alt="Изображение">
+                </div>
+                <div class="main-page-block block-2-1 text-1">
+                    <p class="title">Добро пожаловать на сайт “Sweet Dreams”</p>
+                    <p class="information">Свежая  домашняя выпечка, торты, пирожные, пряники - всё это вы сможете найти у нас.
+                        Приходите в наше кафе или оставляйте свой заказ на сайте, чтобы насладиться вкуснейшей выпечкой в мире. </p>
+                </div>
+            </div>
+                <div id="slider" class="slider_wrap" >
+                    <img src="images/10.jpg" alt="Изображение">
+                    <img  src="images/12.webp" alt="Изображение">
+                    <img  src="images/3.webp" alt="Изображение">
+                </div>
+            <div class="row">
+                <div class=" main-page-block block-1-2 text-2">
+                    <p class="title">О нас</p>
+                    <p class="information">Кондитерская Sweet Dreams с 2019 года постоянно радует свежей продукцией жителей Минска. Мы постоянно изобретаем новые рецепты пирожных, тортов. Наши кондитеры постоянно проходят обучение за рубежом,
+                         что позволяет нам держать качество выпускаемых продуктов на самом высоком уровне.</p>
+                    <p class="title">Сделайте свою жизнь немного слаще, купив нашу продукцию!</p>
+                </div>
+                <div class="block-2-2 images-2">
+                    <img src="images/5.jpg"  alt="Изображение">
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <div class="footer-col logo-footer">
+                <a class="logo" href="Main.html">
+                    <img src="images/Logo7.png" alt="Логотип"/>
+                  </a>
+            </div>
+            <div class="footer-col contact-footer">
+                <a href="">Тел. +375(33)666442</a><br>
+                <a href="">email: SweetDreams@gmail.com</a><br>
+                <a href="">instagram: SweetDreamsby</a><br>
+                <a class="copyright" href="">@Sweet Dreams-2020</a>
+            </div>
+            <div class="footer-col tagline-footer">
+                <p>Сделайте свою жизнь немного слаще, купив нашу продукцию!</p>
+            </div>
+        </footer>
+    </body>
+</html>

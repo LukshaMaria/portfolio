@@ -1,0 +1,133 @@
+<!Doctype Html>
+<html lang="ru">
+    <head>
+        <title>Sweet Dreams</title>
+        <meta charset="utf-8">
+        <link href="CSS/Master-class.css" rel="stylesheet">
+        <link href="CSS/Form.css" rel="stylesheet">
+        <link href="CSS/Buttons.css" rel="stylesheet">
+        <link href="CSS/Header.css" rel="stylesheet">
+        <link href="CSS/Main.css" rel="stylesheet">
+        <link href="CSS/Title.css" rel="stylesheet">
+        <link href="CSS/Footer.css" rel="stylesheet">
+        <link href="CSS/MasterClassWindow.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script src="toggle_menu.js"></script>
+        <script src="JS/MasterClassWindow.js"></script>
+        <script src="JS/exit.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+              <a class="logo" href="Main.html">
+                <img src="images/Logo7.png" alt="Логотип"/>
+              </a>
+              <div class="nav-toggle"><span></span></div>
+              <ul id="menu">
+                <li><a  href="Gallery.html">Галерея</a></li>
+                <li><a  href="Orders.html">Каталог</a></li>
+                <li><a  href="Sales.html">Акции</a></li>
+                <li><a id="point-menu" href="Master-class.html">Мастер-классы</a></li>
+                <li><a  href="Comment.html">Отзывы</a></li>
+                <li><a href="Basket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li><a onclick="exit()"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+              </ul>
+            </nav>
+          </header>
+        <div class="body-container">
+            <h1 class="title">Мастер-классы</h1>
+            <div class="row">
+                <div  class="block-1-1 images-1">
+                    <img src="images/4.jpg" alt="Изображение">
+                </div>
+                <div class="block-2-1 text-1 inf">
+                    <p class="title_course">Курс по выпечке тортов</p>
+                    <button class="show_popup" rel="reg_form" >Подробнее</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="block-1-2 text-2 inf">
+                    <p class="title_course">Выпечка Макаронс</p>
+                    <button class="show_popup" rel="tabs_info">Подробнее</button>
+                </div>
+                <div class="block-2-2 images-1">
+                    <img src="images/3.jpg" alt="Изображение">
+                </div>
+            </div>
+            <div class="popup reg_form">
+                <a class="close" href="#">Close</a>
+                <div class="selectTabs">
+                    <ul class="lineTabs">
+                        <li class="active"><a href="#">Описание</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                    </ul>
+                    <div class="tab_content">
+                        <div class="tab1">
+                            <h2>Курс по выпечке тортов</h2>
+                            <p>Продолжительность: 2 дня.</p>
+                            <p>Уровень тяжести: Средний.</p>
+                            <p>Результат: 3 готовых торта за 2 дня.</p>
+                        </div>
+                        <div class="tab2">
+                            <p>Стоимость курса: <b>220 р.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup tabs_info">
+                <a class="close" href="#">Close</a>	
+                <div class="selectTabs">
+                    <ul class="lineTabs">
+                        <li class="active"><a href="#">Описание</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                    </ul>
+                    <div class="tab_content">
+                        <div class="tab1">
+                            <h2>Мастер-класс "Выпечка макаронс"</h2>
+                            <p>Продолжительность: 8 часов.</p>
+                            <p>Уровень тяжести: Тяжёлый.</p>
+                            <p>Результат: опыт, хорошее настроение и вы сможете затем радовать своих близких выпечкой таких сложных кондитерских изделий как макаронс.</p>
+                        </div>
+                        <div class="tab2">
+                            <p><p>Стоимость мастер-класса: <b>100 р.</b></p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>			
+            <div class="row">
+                <form class="write-courses">
+                    <p class="title_course">Запись на мастер-классы</p>
+                    <select>
+                        <option>Курс по выпечке тортов</option>
+                        <option>Выпечка Макаронс</option>
+                    </select>
+                    <br>
+                    <!--<input class="element-form-courses" type="text" placeholder="Название" required pattern="Курс по выпечке тортов|Выпечка макаронс"><br>-->
+                    <input class="element-form-courses" type="date"><br>
+                    <input class="element-form-courses" type="email" placeholder="email" required><br>
+                    <input class="button-form-courses" type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-col logo-footer">
+                <a class="logo" href="Main.html">
+                    <img src="images/Logo7.png" alt="Логотип"/>
+                  </a>
+            </div>
+            <div class="footer-col contact-footer">
+                <a href="">Тел. +375(33)666442</a><br>
+                <a href="">email: SweetDreams@gmail.com</a><br>
+                <a href="">instagram: SweetDreamsby</a><br>
+                <a class="copyright" href="">@Sweet Dreams-2020</a>
+            </div>
+            <div class="footer-col tagline-footer">
+                <p>Сделайте свою жизнь немного слаще, купив нашу продукцию!</p>
+            </div>
+        </footer>
+        <script src="JS/Button.js"></script>
+    </body>
+</html>

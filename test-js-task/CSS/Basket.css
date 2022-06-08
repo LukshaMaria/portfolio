@@ -1,0 +1,79 @@
+.basket_element
+{
+    width: 100%;
+    height: 340px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: rgba(94, 50, 92, 0.45);
+    padding: 6%;
+    
+}
+.basket_element .element
+{
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: left;
+    margin-right: 5%;
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.19%;
+}
+.block_sum
+{
+    margin-left: 18%;
+}
+.block_sum p
+{   margin-right: 10%;
+    display: block;
+    float: left;
+}
+.element img
+{
+    width: 100%;
+    border-radius: 5px;
+}
+.element img:hover
+{
+    transform: scale(1.1);
+}
+.basket_element .count, .basket_element .counts, .basket_element .sum, .basket_element .element_title
+{
+    padding: 2%;
+    margin-bottom: 2%;
+    font-size: 18px;
+}
+p
+{
+    margin-bottom: 10px;
+}
+button
+{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.finish_sum p
+{
+    font-size: 25px;
+    width: 20%;
+    height: 100%;
+    display: block;
+    float: left;
+    margin-right: 5%;
+    text-align: left;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.19%;
+}
+p:hover
+{
+    color: #5E325C;
+    cursor: pointer;
+}
