@@ -1,0 +1,98 @@
+.st0{fill:none;}
+.st1{opacity:0.47;stroke:#000000;stroke-miterlimit:10;}
+.area{fill:#A31620;stroke:#000000;stroke-miterlimit:10;}
+.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+.st4{fill:#FFFFFF;;stroke-width:0.25;stroke-miterlimit:10;}
+.st5{font-family:'Titillium Web';}
+.st6{font-size:13px; color: rgb(235, 231, 231);}
+.circle_city1,.circle_city2,.circle_city3,.circle_city4,.circle_city5, .circle_city6, .circle_city7, #path17,.circle_city, .circle_city12{fill:rgb(235, 231, 231)}
+body
+{
+    background-color: lightgrey;
+}
+h1
+{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: #880000;
+}
+.newfill
+{
+    background-color: black;
+}
+#tooltip 
+{
+    z-index: 9999;
+	position: absolute;
+	display: none;
+	top:0px;
+	left:0px;
+	background-color:  #702b2b;
+	padding: 5px 10px 5px 10px;
+	color: white;
+	opacity: 0.8;
+	border-radius: 10px;
+    width: 120px;
+    height: 50px; 
+    text-align: center;
+}
+#myOverlay
+{
+    z-index: 40;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    border-radius: 8x;
+    top:0;
+    left: 0;
+    display: none;
+    cursor:auto;
+}
+#Modal_Mcecheta, #Modal_Gergety, #Modal_Rabat, #Modal_Gonio, #Modal_Mocamet, #Modal_Square, #Modal_Prometea,#Canion, #Kaxetia
+{
+    width: 300px;
+    height: 270px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    display: none;
+    text-align: center;
+    border-radius: 8x;
+    z-index: 41;
+    background-color: lightgrey;
+    opacity: 0.9;
+    font-family: 'Titillium Web', sans-serif;
+    color: #880000;
+    font-size: 14px;
+}
+#Modal_Mcecheta h3, #Modal_Gergety h3, #Kaxetia h3, #Modal_Rabat h3, #Modal_Gonio h3, #Modal_Mocamet h3,#Modal_Square h3, #Modal_Prometea h3,#Canion h3
+{
+    font-family: 'Titillium Web', sans-serif;
+    color: #880000;
+}
+
+#Modal_Close_Mcecheta, #Modal_Close_Gergety,#Modal_Close_Kaxetia,#Modal_Close_Rabat,#Modal_Close_Gonio,#Modal_Close_Mocamet,#Modal_Close_Square, #Modal_Close_Prometea, #Modal_Close_Canion
+{
+    width: 27px;
+    height: 25px;
+    top:10px;
+    right: 10px;
+    display:block;
+    position:absolute;
+    cursor: pointer;
+}
+.image
+{
+    position:absolute;
+     height:70px;
+      width:55px;
+      left:110px;
+      top:720px
+}
